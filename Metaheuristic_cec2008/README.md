@@ -4,13 +4,16 @@ The aim of this project is to solve:
   -Two Travelling Salesman Problem (TSP) of dimension 38 and 194  
   -6 functions from the  "Benchmark Functions for the CEC'2018" in dimension 50 and 500 (Shifted Sphere Function, Shifted Schwefel’s Problem 2.21, Shifted Rosenbrock’s Function, Shifted Rastrigin’s Function, Shited Griewank’s Function, Shifted Ackley’s Function)  
 
-To do so, algorithm and function can be implemented manually, but it more convenient and quick to use python framework. See part 2 'Choice of the framework'  
+To do so, algorithm and function can be implemented manually, but it more convenient and quick to use python framework. Since many framework exist, the choosen ones for this project are details in part 2: Choice of the framework.
 
 All python scrypts were run on google collaboratory. System specificity in Mai 2020 (run system_specs.ipynb , from '/miscelaneous' folder to get current specs):  
    - Operating System : Ubuntu 18.04.3 LTS  
    - CPU              : Intel(R) Xeon(R) CPU @ 2.00GHz, 2 core(s)  
    - Memory           : 13.Gb  
 
+To copy this result:  
+From an empty new notebook on google colab (https://colab.research.google.com/)  
+Clone the git repository 
 
 
 
