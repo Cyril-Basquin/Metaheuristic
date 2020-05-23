@@ -1,6 +1,6 @@
 # 1/ Introduction
 
-The aim of this project is to solve:
+The aim of this project is to solve:  
   -Two Travelling Salesman Problem (TSP) of dimension 38 and 194
   -6 functions from the  "Benchmark Functions for the CEC'2018" in dimension 50 and 500 (Shifted Sphere Function, Shifted Schwefel’s Problem 2.21, Shifted Rosenbrock’s Function, Shifted Rastrigin’s Function, Shited Griewank’s Function, Shifted Ackley’s Function)
 
