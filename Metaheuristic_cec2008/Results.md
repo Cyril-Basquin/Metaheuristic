@@ -13,7 +13,7 @@ Comparaison between optimal path in black and my path in red
 
 Comparaison between optimal path in black and my path in red   
 
-<img src="2-Qatar_TSP/overlay_flatten.png" style="zoom:50%;" />
+<img src="2-Qatar_TSP/Optimal_and_my_path_side_by_side_flatten.png" style="zoom:50%;" />
 
 
 ### Continous Otpimization problem

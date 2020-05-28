@@ -13,46 +13,7 @@ All python scrypts for the continous optimization were run on google collaborato
 
 After some test, I choose to remove any dependancy in my code (much easier to run multiple code in parallel in google colab).  It is sufficient to load a notebook with jupyter notebook/Google colab and run them.
 
-Results are shown below, explanation can be find after.
-
-### Travelling Salesman Problem  
-
-<img src="1-Djibouti_TSP/Djibouti_TSP.png" style="zoom:50%;" />  
-
-<img src="2-Qatar_TSP/Qatar_TSP.png" style="zoom:50%;" />  
-
-### Continous Otpimization problem
-
-<img src="3-sphere/My_Sphere_50.png" style="zoom:50%;" />  
-
-<img src="3-sphere/My_Sphere_500.png" style="zoom:50%;" />  
-
-<img src="4-schwefel/My_Schwefel_50.png" style="zoom:50%;" />  
-
-<img src="4-schwefel/My_Schwefel_500.png" style="zoom:50%;" />  
-
-<img src="5-Rosenbrock/My_Rosenbrock_50.png" style="zoom:50%;" />  
-
-<img src="5-Rosenbrock/My_Rosenbrock_500.png" style="zoom:50%;" />  
-
-<img src="6-rastrigin/My_Rastrigin_50.png" style="zoom:50%;" />  
-
-<img src="6-rastrigin/My_Rastrigin_500.png" style="zoom:50%;" />  
-
-<img src="7-griewank/My_Griewank_50.png" style="zoom:50%;" />  
-
-<img src="7-griewank/My_Griewank_500.png" style="zoom:50%;" />  
-
-<img src="8-ackley/My_Ackley_50.png" style="zoom:50%;" />  
-
-<img src="8-ackley/My_Ackley_500.png" style="zoom:50%;" />  
-
-
-
-
-
-
-
+Results can be found here: https://github.com/Cyril-Basquin/Metaheuristic/blob/master/Metaheuristic_cec2008/Results.md
 
 
 # 2/ Discrete Optimization problem : TSP
