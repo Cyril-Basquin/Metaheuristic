@@ -6,25 +6,36 @@ The aim of this project is to solve:
 
 To do so, algorithm and function can be implemented manually, but it's more convenient and quick to use python framework. See part 2 'Choice of the framework'
 
-All python scrypts were run on google collaboratory. System specificity in Mai 2020 (run system_specs.ipynb , from '/miscelaneous' folder to get current specs):
+All python scrypts for the continous optimization were run on google collaboratory. System specificity in Mai 2020 (run system_specs.ipynb , from '/miscelaneous' folder to get current specs):
    - Operating System : Ubuntu 18.04.3 LTS
    - CPU              : Intel(R) Xeon(R) CPU @ 2.00GHz, 2 core(s)
    - Memory           : 13.Gb
 
+After some test, I choose to remove any dependancy in my code (much easier to run multiple code in parallel in google colab).  It is sufficient to load a notebook with jupyter notebook/Google colab and run them.
+
+Results are shown below, explanation can be find after.
+
+<a href="http://i.stack.imgur.com/vwxyz.png">![alt text][1]</a>
 
 
 
-# 2/ Choice of the framework
-Many framework exist to perform mimization (or maximization) of objective function using different kind of solver. SciPy is probably the best known and provide easy to use method such as Nelder-mead or Broyden-Fletcher-Goldfarb-Shanno to solve non-linear problem. When problems became more 'complex', nature inspire algorithm give better result in computation time. To use these algorithm, many framework exist such as jMetalPy, DEAP, Pygmo, Inspyred, NiaPy, Pymoo, Platypus... More or less rich in benchmark functions, algorithms and more or less customizable.
+# 2/ Discrete Optimization problem : TSP
+https://developers.google.com/optimization/routing/tsp#or-tools
+
+
+# 3/ Continous optimization problems
+
+## A/ Choice of the 'best' framework
+Many framework exist to perform optimization of objective function. SciPy is probably the best known and provide easy to use method such as Nelder-mead or Broyden-Fletcher-Goldfarb-Shanno (BGFS) to solve non-linear problem. When problems became more 'complex', nature inspire algorithm give better result (in computation time). To use these algorithm, many framework exist such as jMetalPy, DEAP, Pygmo, Inspyred, NiaPy, Pymoo, Platypus... More or less rich in benchmark functions, algorithms and more or less customizable.
 
 As computation time can be a crucial parameters, especially for big dimension of 'complex' function, I compare the computation time of 3 framework (jMetalPy, Inspyred and pygmo) to solve the rastrigin problem with a Genetic Algorithm (This function is implemented in the 3 framework).
 
-The code used is available here: framework_computation_time/inspyred_vs_jmetalpy_vs_pygmo.ipynb
-and here framework_computation_time/Homemade_Rastrigin_GA.ipynb
+The code used is available here: framework_computation_time/inspyred_vs_jmetalpy_vs_pygmo.ipynb  
+and here framework_computation_time/Homemade_Rastrigin_GA.ipynb  
 
-The summary of the test is presented thereafter:
-GC: code run on Goocl collaboratory
-Local: my PC (Windows 10, Intel i5-7200U @2.5GHz, Memory: 20Gb)
+The summary of the test is presented thereafter:  
+GC: code run on Goocl collaboratory  
+Local: my PC (Windows 10, Intel i5-7200U @2.5GHz, Memory: 20Gb)  
 
 Dimension:50, Function: 1M (1 run)
 | FRAMEWORK  | GC  | Local  |
@@ -32,7 +43,7 @@ Dimension:50, Function: 1M (1 run)
 |Pygmo   | 3s  | - |
 |JmetalPy  |  432s | 606s  |
 |Inspyred  | 59s  | 93s  |  
-|'Homemade'   | 507  | 540s  |
+|'Homemade'   | 507s  | 540s  |
 
 Dimension: 500, Function: 1M
 | FRAMEWORK  | GC  | Local  |
@@ -41,3 +52,29 @@ Dimension: 500, Function: 1M
 |JmetalPy  |  1462s | 1950s  |
 |Inspyred  | 508s  | 843s  |  
 |'Homemade'   |  5111s | 5170s  |
+
+
+Google colab outperfom my local machine to solve the problem. An other advantage of google colab is the possibility to run many instance at the same time (up to 5 with one account) without deterioration of the performance.. And it is possible to create mutliple account.
+
+
+## B/ Choice of the 'best' algorithm.
+
+Then I have to choose the 'best' algorithm to solve the problem. In this study, I define the 'best' algorithm as the one that give the closer result to the minimum (i.e.: fitness= 0), in a 'reasonable' amount of time (~10 minutes). This definition of best is of course debatable. In addition, further study might be require for fine tuning the algorithm parameters (we didn't do it here).  
+
+### For the Shifted Sphere problem
+Shifted Sphere function is a concave derivable function. To solve it, BFGS was used (because it is in second position in the scipy optimize algorithm documentation, and the 1st one didn't give a good result... I have to admit,  it's not the best reason ever.  
+
+### For the others continous optimization problem:
+### - Step 1  
+For the others function, most of the algorithm implemented in pygmo were tested using the predefined parameters. Tested algorithm are: Artificial Bee Colony, Grey Wolf Optimizer, Differential Evolution, Self-adaptive Differential Evolution (jDE and iDE), a 'pygmo' Self-adaptive Differential Evolution (jDE and iDE), Particle Swarm Optimization and a 'pygmo' Particle Swarm Optimization.  
+Each algorithm was run 1 time using a population size of 100 and 10000 generation (as a consequence, the number of evaluted function vary from one algorithm to another).  
+
+### - Step 2  
+The 2/3 'best' algorithm were then run 3 times with an higher number of generations (500 000). If many of them reach the solution, the 'best' one is the one that reach it the more often among the 3 runs, then the one that reach the solution in the minimum number of evaluated function.  
+
+### - Step 3  
+Finally, the 'best' algorithm was run. Evolution of the fitness was plot and number of evaluated function require to reach the minimum is shown. Note: The run time is not relevant as most the minimum is reach before 10% of the total evaluated function. This should be optimize, but my goal here was to be as close as the minimum. Running time was not a priority.
+
+
+## C/ Annotation of the code.
+The code is poorly annotated, but quite easy to read. For continous optimization, pygmo and numba have to be install on google colab. The objective function is define outside the class for conveniance: it is easier to use numba (@jit)  that way and Numba is essential, as it decrease computational time by a factor 10.
