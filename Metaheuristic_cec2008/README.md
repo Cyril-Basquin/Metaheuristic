@@ -15,11 +15,13 @@ After some test, I choose to remove any dependancy in my code (much easier to ru
 
 Results are shown below, explanation can be find after.
 
-<a href="http://www.math.uwaterloo.ca/tsp/world/djtour.gif">![alt text][1]</a>  
-
-![Figure 1-1](http://www.math.uwaterloo.ca/tsp/world/djtour.gif"Figure 1-1")  
-
 <img src="1-Djibouti_TSP/Djibouti_TSP.png" alt="dj38-jmetalpy" style="zoom:50%;" />
+
+<img src="1-Djibouti_TSP/Djibouti_TSP.png" style="zoom:50%;" />  
+
+<img src="1-Djibouti_TSP/Djibouti_TSP.png"  />
+
+
 
 
 
