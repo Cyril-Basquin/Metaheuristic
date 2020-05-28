@@ -18,7 +18,7 @@ Results can be found here: https://github.com/Cyril-Basquin/Metaheuristic/blob/m
 
 
 ## 2/ Discrete Optimization problem : TSP
-To solve the TSP problems, I use a tool develop by google: the OR-tools (https://developers.google.com/optimization/routing/tsp#or-tools). The tool is not very well documented (probably on purpose) but I decided to use it as a black box thanks to its efficiency. As a consequence, i don't find a way to get the number of evaluated path. An other problem is the calculated distance
+To solve the TSP problems, I use a tool develop by google: the OR-tools (https://developers.google.com/optimization/routing/tsp#or-tools). The tool is not very well documented (probably on purpose) but I decided to use it as a black box thanks to its efficiency. As a consequence, I don't find a way to get the number of evaluated path. An other problem is the calculated distance calculated by OR-tools was wrong, so i had to recalculate it. I don't find out why, but this problem might require further investigations.
 
 
 ## 3/ Continous optimization problems
@@ -32,7 +32,7 @@ The code used is available here: framework_computation_time/inspyred_vs_jmetalpy
 and here framework_computation_time/Homemade_Rastrigin_GA.ipynb  
 
 The summary of the test is presented thereafter:  
-GC: code run on Goocl collaboratory  
+GC: code run on Google collaboratory  
 Local: my PC (Windows 10, Intel i5-7200U @2.5GHz, Memory: 20Gb)  
 
 Dimension:50, Function: 1M (1 run)
