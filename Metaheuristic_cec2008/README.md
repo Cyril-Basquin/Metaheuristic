@@ -16,6 +16,7 @@ After some test, I choose to remove any dependancy in my code (much easier to ru
 Results are shown below, explanation can be find after.
 
 <a href="http://i.stack.imgur.com/vwxyz.png">![alt text][1]</a>
+![Figure 1-1](https://raw.github.com/username/repo/master/images/figure 1-1.png "Figure 1-1")
 
 
 
