@@ -27,25 +27,25 @@ Results are shown below, explanation can be find after.
 
 <img src="3-sphere/My_Sphere_500.png" style="zoom:50%;" />  
 
-<img src="4-schwefel/Djibouti_TSP.png" style="zoom:50%;" />  
+<img src="4-schwefel/My_Schwefel_50.png" style="zoom:50%;" />  
 
-<img src="4-schwefel/Djibouti_TSP.png" style="zoom:50%;" />  
+<img src="4-schwefel/My_Schwefel_500.png" style="zoom:50%;" />  
 
-<img src="5-Rosenbrock/Djibouti_TSP.png" style="zoom:50%;" />  
+<img src="5-Rosenbrock/My_Rosenbrock_50.png" style="zoom:50%;" />  
 
-<img src="5-Rosenbrock/Djibouti_TSP.png" style="zoom:50%;" />  
+<img src="5-Rosenbrock/My_Rosenbrock_500.png" style="zoom:50%;" />  
 
-<img src="6-rastrigin/Djibouti_TSP.png" style="zoom:50%;" />  
+<img src="6-rastrigin/My_Rastrigin_50.png" style="zoom:50%;" />  
 
-<img src="6-rastrigin/Djibouti_TSP.png" style="zoom:50%;" />  
+<img src="6-rastrigin/My_Rastrigin_500.png" style="zoom:50%;" />  
 
-<img src="7-griewank/Djibouti_TSP.png" style="zoom:50%;" />  
+<img src="7-griewank/My_Griewank_50.png" style="zoom:50%;" />  
 
-<img src="7-griewank/Djibouti_TSP.png" style="zoom:50%;" />  
+<img src="7-griewank/My_Griewank_500.png" style="zoom:50%;" />  
 
-<img src="8-ackley/Djibouti_TSP.png" style="zoom:50%;" />  
+<img src="8-ackley/My_Ackley_50.png" style="zoom:50%;" />  
 
-<img src="8-ackley/Djibouti_TSP.png" style="zoom:50%;" />  
+<img src="8-ackley/My_Ackley_500.png" style="zoom:50%;" />  
 
 
 
