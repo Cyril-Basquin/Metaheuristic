@@ -15,11 +15,41 @@ After some test, I choose to remove any dependancy in my code (much easier to ru
 
 Results are shown below, explanation can be find after.
 
-<img src="1-Djibouti_TSP/Djibouti_TSP.png" alt="dj38-jmetalpy" style="zoom:50%;" />
+### Travelling Salesman Problem  
 
 <img src="1-Djibouti_TSP/Djibouti_TSP.png" style="zoom:50%;" />  
 
-<img src="1-Djibouti_TSP/Djibouti_TSP.png"  />
+<img src="2-Qatar_TSP/Qatar_TSP.png" style="zoom:50%;" />  
+
+### Continous Otpimization problem
+
+<img src="3-sphere/My_Sphere_50.png" style="zoom:50%;" />  
+
+<img src="3-sphere/My_Sphere_500.png" style="zoom:50%;" />  
+
+<img src="4-schwefel/Djibouti_TSP.png" style="zoom:50%;" />  
+
+<img src="4-schwefel/Djibouti_TSP.png" style="zoom:50%;" />  
+
+<img src="5-Rosenbrock/Djibouti_TSP.png" style="zoom:50%;" />  
+
+<img src="5-Rosenbrock/Djibouti_TSP.png" style="zoom:50%;" />  
+
+<img src="6-rastrigin/Djibouti_TSP.png" style="zoom:50%;" />  
+
+<img src="6-rastrigin/Djibouti_TSP.png" style="zoom:50%;" />  
+
+<img src="7-griewank/Djibouti_TSP.png" style="zoom:50%;" />  
+
+<img src="7-griewank/Djibouti_TSP.png" style="zoom:50%;" />  
+
+<img src="8-ackley/Djibouti_TSP.png" style="zoom:50%;" />  
+
+<img src="8-ackley/Djibouti_TSP.png" style="zoom:50%;" />  
+
+
+
+
 
 
 
